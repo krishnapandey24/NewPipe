@@ -55,7 +55,7 @@ public final class InfoCache {
     @NonNull
     private static String keyOf(final int serviceId, @NonNull final String url,
                                 @NonNull final InfoItem.InfoType infoType) {
-        return serviceId + url + infoType.toString();
+        return serviceId + url + infoType;
     }
 
     private static void removeStaleCache() {
